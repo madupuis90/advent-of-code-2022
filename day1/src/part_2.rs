@@ -4,7 +4,7 @@ use std::io::BufReader;
 use std::vec::Vec;
 
 pub fn process() -> String {
-    let file = File::open("input.txt").expect("Should have been able to read the file");
+    let file = File::open("input.txt").expect("Input file should be in root directory");
     let reader = BufReader::new(file);
 
     let mut vec: Vec<i32> = Vec::new();
